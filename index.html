@@ -25,26 +25,6 @@
             <!-- product stylesheet -->
             <link href="styles/style.css" rel="stylesheet">
 
-            <style>
-                .container-iframe {
-                    position: relative;
-                    overflow: hidden;
-                    width: 100%;
-                    padding-top: 100%; /* 1:1 Aspect Ratio */
-                }
-    
-                /* Then style the iframe to fit in the container div with full height and width */
-                .responsive-iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            </style>
-    
             <!-- product title -->
             <title>625 Words</title>
     </head>
@@ -75,6 +55,16 @@
                         </button>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="ingles.html">Inglês</a></li>
+                            <li><a class="dropdown-item" href="spanish.html">Spanish</a></li>
+                            <li><a class="dropdown-item" href="french.html">French</a></li>
+                            <li><a class="dropdown-item" href="german.html">German</a></li>
+                            <li><a class="dropdown-item" href="italian.html">Italian</a></li>
+                            <li><a class="dropdown-item" href="esperanto.html">Esperanto</a></li>
+                            <li><a class="dropdown-item" href="latin.html">Latin</a></li>
+                            <li><a class="dropdown-item" href="greek.html">Greek</a></li>
+                            <li><a class="dropdown-item" href="guarani.html">Guarani</a></li>
+                            <li><a class="dropdown-item" href="chinese.html">Chinese</a></li>
                             <li><a class="dropdown-item" href="portuguese.html">Portuguese</a></li>
                         </ul>
                     </div>
@@ -84,10 +74,13 @@
 
         <!-- product main body -->
         <main class="container p-4 my-4 ln-container00">
-            <h1>625 Words to Learn in Your Target Language</h1>
+            <h1>
+                <a href="https://blog.fluent-forever.com/appendix5/">625 Words</a>
+                to Learn in Your Target Language
+            </h1>
 
             <div class="container-iframe">
-                <iframe class="responsive-iframe" src="https://onedrive.live.com/embed?cid=88BC9FD7A8D25E96&resid=88BC9FD7A8D25E96%2118142&authkey=AD14bfPu6TL_RAo&em=2" frameborder="0" scrolling="no"></iframe>
+                <iframe class="responsive-iframe" src="https://onedrive.live.com/embed?cid=88BC9FD7A8D25E96&resid=88BC9FD7A8D25E96%2118156&authkey=AH9gfZpT88MLObs&em=2" width="402" height="346" frameborder="0" scrolling="no"></iframe>
             </div>
         </main>
    
@@ -97,63 +90,4 @@
 
     <!-- product tail -->
 
-</html>
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- LN brand stylesheet -->
-        <link href="{% static 'orders/styles/ln/ln-style.css' %}" rel="stylesheet">
-
-        <style>
-            .container-iframe {
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                padding-top: 100%; /* 1:1 Aspect Ratio */
-            }
-
-            /* Then style the iframe to fit in the container div with full height and width */
-            .responsive-iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-
-    <title>625 Words</title>
-</head>
-
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light ln-navbar border">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><span class="ln-brand-name">LN</span></a>
-                <a class="navbar-brand" href="/"><span class="ln-product-name ln-brand-color">{% block product_name %}{% endblock %}</span></a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                {% block product_navbar %}
-                {% endblock %}
-            </div>
-       </nav>
-
-       <h1>625 Words to Learn in Your Target Language</h1>
-
-        <div class="container-iframe">
-            <iframe class="responsive-iframe" src="https://onedrive.live.com/embed?cid=88BC9FD7A8D25E96&resid=88BC9FD7A8D25E96%2118142&authkey=AD14bfPu6TL_RAo&em=2" frameborder="0" scrolling="no"></iframe>
-        </div>
-    </body>
 </html>
